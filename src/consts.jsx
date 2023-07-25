@@ -4,7 +4,7 @@ export const PRICING_PLANS_FEATURES = {
   basic: [
     {
       description: `Automated AI voiceover: *25 minutes* for dubbing are included (monthly)`,
-      iconKey: PlanFeatureIconKey.voice,
+      iconKey: PlanFeatureIconKey.grid,
       tooltipText: `1 minute of AI voiceover is equal to 1 min of final translated video. For example, if you have a five-minute video that needs to be translated into two new languages, you will need 10 minutes of voiceover.`,
       hasHighlitedText: true,
     },

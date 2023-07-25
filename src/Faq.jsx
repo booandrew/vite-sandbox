@@ -43,7 +43,9 @@ export const Faq = () => {
               <CollapsePanel title={faqItem.question}>
                 <div style={COLLAPSE_CONTENT_STYLE}>
                   <div style={{ whiteSpace: 'pre-line', textAlign: 'start' }}>
-                    {parseLinksAndBoldText(faqItem.answer)}
+                    {faqItem.hasBoldText || faqItem.hasLink
+                      ? parseLinksAndBoldText(faqItem.answer)
+                      : faqItem.answer}
                   </div>
                 </div>
               </CollapsePanel>
