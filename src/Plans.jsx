@@ -80,7 +80,9 @@ export const Plans = () => {
                       {PLAN_FEATURE_ICONS[feature.iconKey]}
                       <span>
                         <span>
-                          {parseLinksAndBoldText(feature.description)}
+                          {feature.hasHighlitedText || feature.link
+                            ? parseLinksAndBoldText(feature.description)
+                            : feature.description}
                         </span>
                         &nbsp;
                         {feature.link && (
