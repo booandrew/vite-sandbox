@@ -2,6 +2,49 @@ import { parseLinksAndBoldText } from './parseLinksAndBoldText';
 import { FAQ_ITEMS, PRICING_PLANS_FEATURES } from './consts';
 import { PlanCategory, PLAN_FEATURE_ICONS } from './service-consts';
 import CollapsePanel from './CollapsePanel';
+import React, { useState } from 'react';
+import VoiceoverIcon from './assets/icons/info.svg';
+
+const Tooltip = ({ text, children }) => {
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowTooltip(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowTooltip(false);
+  };
+
+  return (
+    <div
+      style={{ position: 'relative', display: 'inline-block' }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      {children}
+      {showTooltip && (
+        <div
+          style={{
+            position: 'absolute',
+            top: '100%',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            color: '#fff',
+            padding: '4px 8px',
+            borderRadius: '4px',
+            fontSize: '12px',
+            width: 200,
+            textAlign: 'center',
+          }}
+        >
+          {text}
+        </div>
+      )}
+    </div>
+  );
+};
 
 const PRICING_HEAD_STYLE = {
   background: '-webkit-linear-gradient(45deg, #ffccff, #ff99cc)',
@@ -48,6 +91,11 @@ export const Plans = () => {
                           >
                             Learn more
                           </a>
+                        )}
+                        {feature.tooltipText && (
+                          <Tooltip text={feature.tooltipText}>
+                            <img src={VoiceoverIcon}></img>
+                          </Tooltip>
                         )}
                       </span>
                     </div>
