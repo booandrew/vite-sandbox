@@ -5,7 +5,7 @@ import CollapsePanel from './CollapsePanel';
 import React, { useState } from 'react';
 import VoiceoverIcon from './assets/icons/info.svg';
 
-const Tooltip = ({ text, children }) => {
+const Tooltip = ({ text, children, title }) => {
   const [showTooltip, setShowTooltip] = useState(false);
 
   const handleMouseEnter = () => {
@@ -39,7 +39,8 @@ const Tooltip = ({ text, children }) => {
             textAlign: 'center',
           }}
         >
-          {text}
+          <h3>{title}</h3>
+          <div>{text}</div>
         </div>
       )}
     </div>
@@ -95,7 +96,10 @@ export const Plans = () => {
                           </a>
                         )}
                         {feature.tooltipText && (
-                          <Tooltip text={feature.tooltipText}>
+                          <Tooltip
+                            title={feature.tooltipTitle}
+                            text={feature.tooltipText}
+                          >
                             <img src={VoiceoverIcon}></img>
                           </Tooltip>
                         )}
