@@ -55,7 +55,7 @@ const PRICING_HEAD_STYLE = {
 const PLAN_CONTAINER_STYLE = { padding: 30, border: '1px solid' };
 const SEPARATOR_STYLE = { width: '100%', height: 1, background: 'grey' };
 const FEATURES_STYLE = { display: 'grid', rowGap: 24 };
-const FEATURE_ITEM_STYLE = { display: 'flex', gap: 16,  };
+const FEATURE_ITEM_STYLE = { display: 'flex', gap: 16 };
 
 export const Plans = () => {
   const plans = Object.values(PlanCategory);
