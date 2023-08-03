@@ -1,4 +1,4 @@
-import TranslateIcon from './assets/icons/voice.svg';
+import TranslateIcon from './assets/icons/translate.svg';
 import VoiceoverIcon from './assets/icons/voice.svg';
 import VoiceCloningIcon from './assets/icons/voice-clone.svg';
 import GridIcon from './assets/icons/grid.svg';
@@ -6,7 +6,7 @@ import StarsExtraIcon from './assets/icons/stars-extra.svg';
 import EditIcon from './assets/icons/edit.svg';
 import FileIcon from './assets/icons/file.svg';
 import CheckMarkIcon from './assets/icons/check-mark.svg';
-import TextInputIcon from './assets/icons/check-mark.svg';
+import TextInputIcon from './assets/icons/text-input.svg';
 
 export const PlanCategory = {
   basic: `basic`,
