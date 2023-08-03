@@ -46,11 +46,11 @@ export const parseLinksAndBoldText = (text) => {
 
         const isBold = checkIsBold(chunk);
 
-        return (
-          <span key={index} isBold={isBold}>
-            {isBold ? parsedText : chunk}
-          </span>
-        );
+        console.log({
+          isBold,
+        });
+
+        return <span key={index}>{isBold ? <b>{parsedText}</b> : chunk}</span>;
       })}
     </>
   );
