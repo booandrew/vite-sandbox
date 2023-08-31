@@ -12,7 +12,11 @@ export const PRICING_PLANS_FEATURES = {
       isParsingRequire: true,
     },
     {
-      description: 'Translate your video & audio into 60+ languages',
+      description: 'Add extra voiceover minutes for $1/min',
+      iconKey: PlanFeatureIconKey.starsExtra,
+    },
+    {
+      description: 'Translate your video & audio into 130+ languages',
       iconKey: PlanFeatureIconKey.translate,
     },
     {
@@ -24,13 +28,10 @@ export const PRICING_PLANS_FEATURES = {
       iconKey: PlanFeatureIconKey.translate,
     },
     {
-      description: 'You can add extra voiceover minutes for $1/min',
-      iconKey: PlanFeatureIconKey.starsExtra,
-    },
-    {
-      description:
-        'Voice Cloning for 8 languages (English, Portuguese, French, Spanish, Italian, German, Polish, Hindi)',
+      description: 'Voice Cloning for 28 languages',
       iconKey: PlanFeatureIconKey.grid,
+      tooltipText:
+        'English, Japanese, Chinese, German, Hindi, French, Korean, Portuguese, Italian, Spanish, Indonesian, Dutch, Turkish, Filipino, Polish, Swedish, Bulgarian, Romanian, Arabic, Czech, Greek, Finnish, Croatian, Malay, Slovak, Danish, Tamil, Ukrainian',
     },
   ],
   pro: [
@@ -44,7 +45,11 @@ export const PRICING_PLANS_FEATURES = {
       isParsingRequire: true,
     },
     {
-      description: 'Translate your video & audio into 60+ languages',
+      description: 'Add extra voiceover minutes for $1/min',
+      iconKey: PlanFeatureIconKey.starsExtra,
+    },
+    {
+      description: 'Translate your video & audio into 130+ languages',
       iconKey: PlanFeatureIconKey.translate,
     },
     {
@@ -56,29 +61,26 @@ export const PRICING_PLANS_FEATURES = {
       iconKey: PlanFeatureIconKey.translate,
     },
     {
-      description: 'You can add extra voiceover minutes for $1/min',
-      iconKey: PlanFeatureIconKey.starsExtra,
-    },
-    {
-      description:
-        'Voice Cloning for 8 languages (English, Portuguese, French, Spanish, Italian, German, Polish, Hindi)',
+      description: 'Voice Cloning for 28 languages',
       iconKey: PlanFeatureIconKey.grid,
+      tooltipText:
+        'English, Japanese, Chinese, German, Hindi, French, Korean, Portuguese, Italian, Spanish, Indonesian, Dutch, Turkish, Filipino, Polish, Swedish, Bulgarian, Romanian, Arabic, Czech, Greek, Finnish, Croatian, Malay, Slovak, Danish, Tamil, Ukrainian',
     },
 
     // pro-plan features
     {
       description: '*AI-rewriter for shorten fast speech.*',
       iconKey: PlanFeatureIconKey.edit,
-      link: 'https://intercom.help/rask/en/articles/8155373-what-is-ai-rewriter-feature',
+      link: 'https://intercom.help/rask/en/articles/8194268-what-is-ai-rewriter-feature',
       isParsingRequire: true,
     },
     //TODO: эти фичи пока не доступны
-    // {
-    //   description: '*SRT upload support.*',
-    //   iconKey: PlanFeatureIconKey.file,
-    //   link: 'https://intercom.help/rask/en/articles/8155405-what-is-srt-upload-support',
-    //   isParsingRequire: true,
-    // },
+    {
+      description: '*SRT upload support (soon)*',
+      iconKey: PlanFeatureIconKey.file,
+      // link: 'https://intercom.help/rask/en/articles/8155405-what-is-srt-upload-support',
+      isParsingRequire: true,
+    },
     // {
     //   description: '*Multilingual projects: translate into up to 3 languages at once.*',
     //   iconKey: PlanFeatureIconKey.starsExtra,
@@ -86,7 +88,7 @@ export const PRICING_PLANS_FEATURES = {
     //   isParsingRequire: true,
     // },
     {
-      description: '*Early access to Lip Sync feature soon*',
+      description: '*Lip Sync feature (soon)*',
       iconKey: PlanFeatureIconKey.checkMark,
       isParsingRequire: true,
     },
@@ -102,7 +104,11 @@ export const PRICING_PLANS_FEATURES = {
       isParsingRequire: true,
     },
     {
-      description: 'Translate your video & audio into 60+ languages',
+      description: 'Add extra voiceover minutes for $1/min',
+      iconKey: PlanFeatureIconKey.starsExtra,
+    },
+    {
+      description: 'Translate your video & audio into 130+ languages',
       iconKey: PlanFeatureIconKey.translate,
     },
     {
@@ -114,29 +120,26 @@ export const PRICING_PLANS_FEATURES = {
       iconKey: PlanFeatureIconKey.translate,
     },
     {
-      description: 'You can add extra voiceover minutes for $1/min',
-      iconKey: PlanFeatureIconKey.starsExtra,
-    },
-    {
-      description:
-        'Voice Cloning for 8 languages (English, Portuguese, French, Spanish, Italian, German, Polish, Hindi)',
+      description: 'Voice Cloning for 28 languages',
       iconKey: PlanFeatureIconKey.grid,
+      tooltipText:
+        'English, Japanese, Chinese, German, Hindi, French, Korean, Portuguese, Italian, Spanish, Indonesian, Dutch, Turkish, Filipino, Polish, Swedish, Bulgarian, Romanian, Arabic, Czech, Greek, Finnish, Croatian, Malay, Slovak, Danish, Tamil, Ukrainian',
     },
 
     // business-plan features
     {
       description: '*AI-rewriter for shorten fast speech.*',
       iconKey: PlanFeatureIconKey.edit,
-      link: 'https://intercom.help/rask/en/articles/8155373-what-is-ai-rewriter-feature',
+      link: 'https://intercom.help/rask/en/articles/8194268-what-is-ai-rewriter-feature',
       isParsingRequire: true,
     },
     //TODO: эти фичи пока не доступны
-    // {
-    //   description: '*SRT upload support.*',
-    //   iconKey: PlanFeatureIconKey.file,
-    //   link: 'https://intercom.help/rask/en/articles/8155405-what-is-srt-upload-support',
-    //   isParsingRequire: true,
-    // },
+    {
+      description: '*SRT upload support (soon)*',
+      iconKey: PlanFeatureIconKey.file,
+      // link: 'https://intercom.help/rask/en/articles/8155405-what-is-srt-upload-support',
+      isParsingRequire: true,
+    },
     // {
     //   description: '*Multilingual projects: translate into up to 3 languages at once.*',
     //   iconKey: PlanFeatureIconKey.starsExtra,
@@ -144,7 +147,7 @@ export const PRICING_PLANS_FEATURES = {
     //   isParsingRequire: true,
     // },
     {
-      description: '*Early access to Lip Sync feature soon*',
+      description: '*Lip Sync feature (soon)*',
       iconKey: PlanFeatureIconKey.checkMark,
       isParsingRequire: true,
     },
@@ -251,7 +254,7 @@ export const FAQ_ITEMS = [
 
   {
     question: `How many languages do you currently support?`,
-    answer: `With Rask AI, you can translate from nearly any language to over (130 languages)[https://intercom.help/rask/en/articles/8177323-to-which-languages-can-i-translate-my-video]. Our Voice Cloning feature offers a human-like experience, and it is currently available when dubbing from any source language to the following 8 languages: English, German, Polish, Spanish, Italian, French, Portuguese, and Hindi.`,
+    answer: `With Rask AI, you can translate from nearly any language to over (130 languages)[https://intercom.help/rask/en/articles/8194105-to-which-languages-can-i-translate-my-video]. Our Voice Cloning feature offers a human-like experience, and it is currently available when dubbing from any source language to the following 29 languages: English, Japanese, Chinese, German, Hindi, French, Korean, Portuguese, Italian, Spanish, Indonesian, Dutch, Turkish, Filipino, Polish, Swedish, Bulgarian, Romanian, Arabic, Czech, Greek, Finnish, Croatian, Malay, Slovak, Danish, Tamil, Ukrainian.`,
     isParsingRequire: true,
   },
 
@@ -267,7 +270,7 @@ export const FAQ_ITEMS = [
 
   {
     question: `What should I do if 500 minutes per month are insufficient for my needs?`,
-    answer: `Our regular pricing plans provide up to 500 minutes per month. If you need more minutes, you can buy them for $1 each. We can create a custom plan for you if you require a larger volume of minutes regularly. To discuss your needs and explore these options, book a call with our partnership specialist using the (Calendly link)[https://calendly.com/d/yrv-cpn-ydd/rask-ai-enterprise-call]`,
+    answer: `Our regular pricing plans provide up to 500 minutes per month. If you need more minutes, you can buy them for $1 each. We can create a custom plan for you if you require a larger volume of minutes regularly. To discuss your needs and explore these options, book a call with our partnership specialist using the (Calendly link)[https://calendly.com/panshyna/event-with-anastasia]`,
     isParsingRequire: true,
   },
 
